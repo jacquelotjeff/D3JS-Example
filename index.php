@@ -4,7 +4,7 @@
 	<title>TPS 3 Visualisation</title>
 
 	<!-- Inclusion JS (librairie + scripts de création de graph) -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet"></link>
 
@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="js/renderer/jqplot.barRenderer.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.categoryAxisRenderer.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.highlighter.js"></script>
+	<script type="application/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
 
 
 	<!-- Fichier surchargés -->
