@@ -4,7 +4,7 @@
 	<title>TPS 3 Visualisation</title>
 
 	<!-- Inclusion JS (librairie + scripts de création de graph) -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet"></link>
 
@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="js/renderer/jqplot.barRenderer.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.categoryAxisRenderer.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.highlighter.js"></script>
-
+	<script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
 
 	<!-- Fichier surchargés -->
 	<script type="text/javascript" src="js/project.js"></script>
@@ -38,9 +38,11 @@
 		<div id="second"></div>
 	</div>
 
-	<div class="first">
-		<h3>Troisème statistique</h3>
-		<div id="third"></div>
+	<div class="third">
+		<h3>Troisième statistique</h3>
+		<div id="third" class="pie-chart">
+			
+		</div>
 	</div>
 </div>
 
