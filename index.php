@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
 
 	<!-- Fichier surchargés -->
-	<script type="text/javascript" src="js/project.js"></script>
+	<script type="text/javascript" src="js/percent-friends-message.js"></script>
 	<link href="css/project.css" type="text/css" rel="stylesheet"></link>
 </head>
 <body>
@@ -38,9 +38,9 @@
 		<div id="second"></div>
 	</div>
 
-	<div class="third">
-		<h3>Troisième statistique</h3>
-		<div id="third" class="pie-chart">
+	<div class="percent-friends-message">
+		<h3>Pourcentage de messages envoyés à des amis / non amis</h3>
+		<div id="percent-friends-message">
 			
 		</div>
 	</div>
