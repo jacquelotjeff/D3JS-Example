@@ -1,45 +1,35 @@
-$(document).ready(function(){
-	// No cache for this request
-	$.ajaxSetup({ cache: false });
-	
-	function getRequest(url, callback) {
-		$.get(url, function(data) {
-			data = $.parseJSON(data);
-			callback(data);
-		});
-	}	
+function generateBarChart(idDiv, data, ticks)
+{
+	$.jqplot.config.enablePlugins = true;
+	var barChart = $.jqplot(idDiv, [data], {
+        animate: !$.jqplot.use_excanvas,
+        seriesDefaults:{
+            renderer:$.jqplot.BarRenderer,
+            pointLabels: { show: true }
+        },
+        axes: {
+            xaxis: {
+                renderer: $.jqplot.CategoryAxisRenderer,
+                ticks: ticks
+            }
+        },
+		axesDefaults:
+		{
+			min: 0,
+			tickInterval: 1,
+			tickOptions: {
+				formatString: '%d'
+			}
+		},
+        highlighter: { show: false }
+    });
 
-	function generateBarChart(idDiv, data, ticks)
-	{
-		$.jqplot.config.enablePlugins = true;
-		var barChart = $.jqplot(idDiv, [data], {
-            animate: !$.jqplot.use_excanvas,
-            seriesDefaults:{
-                renderer:$.jqplot.BarRenderer,
-                pointLabels: { show: true }
-            },
-            axes: {
-                xaxis: {
-                    renderer: $.jqplot.CategoryAxisRenderer,
-                    ticks: ticks
-                }
-            },
-			axesDefaults:
-			{
-				min: 0,
-				tickInterval: 1,
-				tickOptions: {
-					formatString: '%d'
-				}
-			},
-            highlighter: { show: false }
-        });
+	$(window).resize(function() {
+		barChart.replot( { resetAxes: true } );
+	});
+}
 
-		$(window).resize(function() {
-			barChart.replot( { resetAxes: true } );
-		});
-	}
-
+function generatePourcentFriendGender() {
 	var list_users = [];
 	getRequest('webservices/liste_amis_user.php?user=5', function(data) {
 		var list_users = "";
@@ -67,4 +57,4 @@ $(document).ready(function(){
 			generateBarChart('pourcent_friend_gender', [count_man, count_woman], ["Hommes", "Femmes"]);
 		});
 	});
-});
+}

@@ -30,6 +30,7 @@ function generatePercentFriendsMessage(user) {
 				["Non ami", messages.length - countMessageToFriends]
 			];
 
+
 			//Display the diagram
 			var plot1 = $.jqplot('percent-friends-message', [data], {
 				seriesDefaults:{

@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="js/percent-friends-message.js"></script>
 	<script type="text/javascript" src="js/friends-evolution.js"></script>
     <script type="text/javascript" src="js/pourcent-friend-gender.js"></script>
+    <script type="text/javascript" src="js/popularity-by-gender.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 	<link href="css/project.css" type="text/css" rel="stylesheet"></link>
 
@@ -52,6 +53,20 @@
 		<h3>Pourcentage de messages envoyés à des amis / non amis</h3>
 		<div id="percent-friends-message">
 			
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<h3>Popularité en fonction du genre</h3>
+		<div class="col-md-6">
+			<h1>Hommes</h1>
+			<div id="popularity-by-gender-m">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h1>Femmes</h1>
+			<div id="popularity-by-gender-f" class="col-md-6">
+			</div>
 		</div>
 	</div>
 </div>
