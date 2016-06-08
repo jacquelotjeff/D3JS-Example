@@ -1,10 +1,10 @@
 function generatePercentFriendsMessage(user) {
 
 	// On appelle le webservice local, possibilité d'ajouter des paramètre get dans l'URL exploitable dans le script qui génère les données
-	var url = 'http://localhost/data-visu/TP_NOTE_DATAVIZ/webservices/messages_user.php?user='+user;
+	var url = 'webservices/messages_user.php?user='+user;
 	getRequest(url, function(messages){
 		
-		var url = 'http://localhost/data-visu/TP_NOTE_DATAVIZ/webservices/liste_amis_user.php?user='+user;
+		var url = 'webservices/liste_amis_user.php?user='+user;
 		getRequest(url, function(friends){
 
 			var countMessageToFriends = 0;
