@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="js/friends-evolution.js"></script>
     <script type="text/javascript" src="js/pourcent-friend-gender.js"></script>
     <script type="text/javascript" src="js/popularity-by-gender.js"></script>
+    <script type="text/javascript" src="js/friends-by-gender-years.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 	<link href="css/project.css" type="text/css" rel="stylesheet"></link>
 
@@ -67,6 +68,14 @@
 			<h1>Femmes</h1>
 			<div id="popularity-by-gender-f" class="col-md-6">
 			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<h3>Répartition des amis par tranche d'âge et par sexe</h3>
+		<div id="friends-by-gender-years-info">
+		</div>
+		<div id="friends-by-gender-years" class="test">
 		</div>
 	</div>
 </div>

@@ -16,11 +16,10 @@ function generatePopularityByGender(user) {
 
 		getRequest(url, function(infosNoteurs){
 			
-			//var data[0] = "";
-			//var data[1] = "";
 			var data1 = {};
 			data1[0] = {};
 			data1[1] = {};
+			
 			var noteursIndex = [];
 			for (var i = 0; i < infosNoteurs.length; i++) {
 				noteursIndex[infosNoteurs[i][0]] = infosNoteurs;
@@ -56,9 +55,6 @@ function generatePopularityByGender(user) {
 				);
 			}
 			
-			console.log(dataFemale);
-			console.log(dataMale);
-
 			//Display the diagram
 			if (dataMale.length!=0) {
 				var plot1 = $.jqplot('popularity-by-gender-m', [dataMale], {
