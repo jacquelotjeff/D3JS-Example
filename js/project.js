@@ -2,8 +2,9 @@ $(document).ready(function(){
 
 	$.ajaxSetup({ cache: false });
 	
-	generateFriendsEvolution(3);
+	generateFriendsEvolution(7);
 	generatePercentFriendsMessage(3);
+	generateEvolutionPopularite(13)
 
 });
 
