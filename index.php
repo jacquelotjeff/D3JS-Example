@@ -17,9 +17,12 @@
 	<script type="text/javascript" src="js/renderer/jqplot.categoryAxisRenderer.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.highlighter.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
+	<script type="application/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
 
 	<!-- Fichier surchargés -->
 	<script type="text/javascript" src="js/percent-friends-message.js"></script>
+	<script type="text/javascript" src="js/friends-evolution.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
 	<link href="css/project.css" type="text/css" rel="stylesheet"></link>
 </head>
 <body>
