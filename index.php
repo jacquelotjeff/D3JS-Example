@@ -22,26 +22,33 @@
 	<!-- Fichier surchargés -->
 	<script type="text/javascript" src="js/percent-friends-message.js"></script>
 	<script type="text/javascript" src="js/friends-evolution.js"></script>
+    <script type="text/javascript" src="js/pourcent-friend-gender.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 	<link href="css/project.css" type="text/css" rel="stylesheet"></link>
+
 </head>
 <body>
 <div class="container">
-	<div class="page-header">
+    <div class="page-header">
         <h1>Statistiques</h1>
     </div>
 
-	<div class="first">
-		<h3>Première statistique</h3>
-		<div id="first"></div>
-	</div>
+    <div class="col-md-12 friends-evolution">
+        <h3>Evolution du nombre d'amis</h3>
+        <div id="friends-evolution"></div>
+    </div>
 
-	<div class="second">
-		<h3>Deuxième statistique</h3>
-		<div id="second"></div>
-	</div>
+    <div class="second">
+        <h3>Deuxième statistique</h3>
+        <div id="second"></div>
+    </div>
 
-	<div class="percent-friends-message">
+    <div class="col-md-12 pourcent_friend_gender">
+        <h3>Pourcentage d'amis masculins et féminins</h3>
+        <div id="pourcent_friend_gender"></div>
+    </div>
+
+	<div class="col-md-12 percent-friends-message">
 		<h3>Pourcentage de messages envoyés à des amis / non amis</h3>
 		<div id="percent-friends-message">
 			

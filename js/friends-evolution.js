@@ -1,6 +1,6 @@
 function generateFriendsEvolution(user) {
 	getRequest('webservices/liste_amis_user_m.php?user='+user, function(data) {
-	    generateAxisData('first', data);
+	    generateAxisData('friends-evolution', data);
 	});
 }
 
