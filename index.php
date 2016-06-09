@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
 	<script type="application/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
 	
-	<script type="application/javascript" src="js/renderer/d3.min.js"></script>
+	<script type="application/javascript" src="js/d3.min.js"></script>
 
 	<!-- Fichier surchargés -->
 	<script type="text/javascript" src="js/percent-friends-message.js"></script>
