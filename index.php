@@ -115,25 +115,24 @@
 		<div id="no-data" class="hidden">
 			<div class="alert alert-warning">
 				<i class="glyphicon glyphicon-remove"></i>
-				Pas de données pour afficher le graphique.
+				Aucun utilisateur n'a attribué de note.
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="col-md-12">
+		<h3>Répartition des amis par tranche d'âge et par sexe</h3>
 		<div class="col-md-12">
-			<h3>Répartition des amis par tranche d'âge et par sexe</h3>
-			<div id="friends-by-gender-years-info">
-			</div>
-			<div id="friends-by-gender-years" class="test"></div>
+			<div id="friends-by-gender-years-info"></div>
+			<div id="friends-by-gender-years"></div>
 		</div>
 	</div>
 	
-	<div class="row">
+	<div class="col-md-12">
+		<h3>Nuage de points de la popularité par tranche d'âge.</h3>
 		<div class="col-md-12">
-			<h3>Nuage de points de la popularité par tranche d'âge.</h3>
 			<div id="popularity-cloud"></div>
-		</div>
+		<div class="col-md-12">
 	</div>
 </div>
 
