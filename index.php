@@ -39,7 +39,7 @@
         <div id="friends-evolution"></div>
     </div>
 
-    <div class="second">
+    <div class="col-md-12 evolution-popularite">
         <h3>Evolution de la popularité </h3>
         <div id="evolution-popularite"></div>
     </div>
