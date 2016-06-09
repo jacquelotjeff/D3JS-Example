@@ -27,6 +27,7 @@
 	<!-- Fichier surchargés -->
 	<script type="text/javascript" src="js/percent-friends-message.js"></script>
 	<script type="text/javascript" src="js/friends-evolution.js"></script>
+	<script type="text/javascript" src="js/evolution-popularite.js"></script>
     <script type="text/javascript" src="js/pourcent-friend-gender.js"></script>
     <script type="text/javascript" src="js/popularity-by-gender.js"></script>
     <script type="text/javascript" src="js/friends-by-gender-years.js"></script>
@@ -46,9 +47,9 @@
         <div id="friends-evolution"></div>
     </div>
 
-    <div class="second">
-        <h3>Deuxième statistique</h3>
-        <div id="second"></div>
+    <div class="col-md-12 evolution-popularite">
+        <h3>Evolution de la popularité </h3>
+        <div id="evolution-popularite"></div>
     </div>
 
     <div class="col-md-12 pourcent_friend_gender">
