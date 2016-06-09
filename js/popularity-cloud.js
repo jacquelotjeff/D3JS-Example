@@ -53,15 +53,19 @@ function generatePopularityCloud(user){
 
 function generateCloud(data){
 
-	var svg = d3.select('body div.container #popularity-cloud').append("svg").attr("height", 500).attr("width", 1000).style("border", "1px solid black");
+	width = 300,   // width of svg
+    height = 300,  // height of svg
+    padding = 50; // space around the chart, not including labels
+
+	var svg = d3.select('body div.container #popularity-cloud').append("svg").attr("height", height).attr("width", width).style("border", "1px solid black");
 
 	var xScale = d3.scale.linear()
 						.domain([0, 4])
-						.range([50, 300]);
+						.range([padding, width - padding]);
 
 	var yScale = d3.scale.linear()
 						.domain([5, 1])
-						.range([50, 300]);
+						.range([height - padding, padding]);
 
 	var xAxis = d3.svg.axis()
 						.scale(xScale)
@@ -73,15 +77,16 @@ function generateCloud(data){
 
 	var yAxis = d3.svg.axis()
 						.scale(yScale)
-						.orient("left");
+						.orient("left")
+						.tickFormat(d3.format("d"));
 
 	svg.append("g").attr("class", "axis")
 					.call(xAxis)
-					.attr("transform", "translate(0,300)");
+					.attr("transform", "translate(0," + (height-padding) + ")");
 
 	svg.append("g").attr("class", "axis")
 					.call(yAxis)
-					.attr("transform", "translate(50,0)");
+					.attr("transform", "translate("+padding+",0)");
 
 	svg.selectAll("text")
 		.data(data)
@@ -96,6 +101,16 @@ function generateCloud(data){
 		.attr("y", function(d){
 			return yScale(d[1]);
 		});
+
+		svg.append("text")
+            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
+            .text("Note");
+
+		svg.append("text")
+            .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+            .attr("transform", "translate("+ (width/2) +","+(height-(padding/3))+")")  // centre below axis
+            .text("Tranche d'âge");
 
 	var circles = svg
 					.selectAll("circle")
