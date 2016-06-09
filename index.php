@@ -19,6 +19,9 @@
 	<script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
 	<script type="application/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
 	
+	<script type="application/javascript" src="js/renderer/jqplot.canvasTextRenderer.js"></script>
+	<script type="application/javascript" src="js/renderer/jqplot.canvasAxisLabelRenderer.js"></script>
+	
 	<script type="application/javascript" src="js/d3.min.js"></script>
 
 	<!-- Fichier surchargés -->

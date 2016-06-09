@@ -9,7 +9,12 @@ function generateAxisData(idDiv, data) {
         title:'',
         axes:{
             xaxis:{
-                renderer:$.jqplot.DateAxisRenderer
+                renderer:$.jqplot.DateAxisRenderer,
+                label:"Date"
+            },
+            yaxis:{
+                renderer:$.jqplot.CanvasAxisRenderer,
+                label:"Nombre d'amis"
             }
         },
         series:[{lineWidth:4, markerOptions:{style:'square'}}]

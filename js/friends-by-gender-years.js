@@ -66,7 +66,12 @@ function generateFriendsByGenderYears(user) {
 	            axes: {
 	                xaxis: {
 	                    renderer: $.jqplot.CategoryAxisRenderer,
-	                    ticks: slicesYears
+	                    ticks: slicesYears,
+	                    label:"Tranche d'années"
+	                },
+	                yaxis: {
+	                    renderer: $.jqplot.CanvasAxisRenderer,
+	                    label:"Note donnée"
 	                }
 	            }
         	});
