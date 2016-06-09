@@ -44,7 +44,7 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div id="user-details" class="col-lg-6 col-sm-6">
+		<div id="user-details" class="col-lg-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
 		    <div class="card hovercard">
 		        <div class="card-background">
 		            <img class="card-bkimg" alt="" style="width: 100px; height: 100px; src="https://placeholdit.imgix.net/~text?txtsize=33&w=100&h=100">
