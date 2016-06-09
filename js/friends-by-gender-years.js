@@ -76,6 +76,10 @@ function generateFriendsByGenderYears(user) {
 	            }
         	});
 
+			$(window).resize(function() {
+				plot2.replot( { resetAxes: true } );
+			});
+				
         	$('#friends-by-gender-years').bind('jqplotDataHighlight', 
 	            function (ev, seriesIndex, pointIndex, data) {
 	            	var genderStr = (seriesIndex == 1 ? 'homme' : 'femme');

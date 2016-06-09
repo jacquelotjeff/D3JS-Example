@@ -67,10 +67,14 @@ function generatePopularityByGender(user) {
 						location:'e',
 					}       
 				});
+
+				$(window).resize(function() {
+					plot1.replot( { resetAxes: true } );
+				});
 			}
 
 			if (dataFemale.length!=0) {
-				var plot1 = $.jqplot('popularity-by-gender-f', [dataFemale], {
+				var plot2 = $.jqplot('popularity-by-gender-f', [dataFemale], {
 					seriesDefaults:{
 						renderer:$.jqplot.PieRenderer, 
 						rendererOptions: { showDataLabels: true }
@@ -79,6 +83,10 @@ function generatePopularityByGender(user) {
 						show:true, 
 						location:'e',
 					}       
+				});
+
+				$(window).resize(function() {
+					plot2.replot( { resetAxes: true } );
 				});
 			}
 

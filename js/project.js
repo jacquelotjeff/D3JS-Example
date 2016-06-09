@@ -2,15 +2,13 @@ $(document).ready(function(){
 
 	$.ajaxSetup({ cache: false });
 	
-	generateFriendsEvolution(7);
-	generatePercentFriendsMessage(3);
-	generateEvolutionPopularite(13)
-	generatePopularityByGender(3);
-	generatePourcentFriendGender(3);
-	generateFriendsByGenderYears(4);
-	generatePopularityCloud(4);
-
-
+	generateFriendsEvolution(current_user);
+	generatePercentFriendsMessage(current_user);
+	generateEvolutionPopularite(13);
+	generatePopularityByGender(current_user);
+	generatePourcentFriendGender(current_user);
+	generateFriendsByGenderYears(current_user);
+	generatePopularityCloud(current_user);
 });
 
 function getRequest(url, callback) {

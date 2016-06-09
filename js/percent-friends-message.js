@@ -43,6 +43,10 @@ function generatePercentFriendsMessage(user) {
 				}       
 			});
 
+			$(window).resize(function() {
+				plot1.replot( { resetAxes: true } );
+			});
+
 		});
 	});
 }
