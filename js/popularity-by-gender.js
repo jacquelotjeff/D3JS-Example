@@ -71,6 +71,9 @@ function generatePopularityByGender(user) {
 				$(window).resize(function() {
 					plot1.replot( { resetAxes: true } );
 				});
+			} else {
+				var noDataHtml =  $("#no-data").html();
+				$("#popularity-by-gender-m").append(noDataHtml);
 			}
 
 			if (dataFemale.length!=0) {
@@ -88,6 +91,9 @@ function generatePopularityByGender(user) {
 				$(window).resize(function() {
 					plot2.replot( { resetAxes: true } );
 				});
+			} else {
+				var noDataHtml =  $("#no-data").html();
+				$("#popularity-by-gender-f").append(noDataHtml);
 			}
 
 		});

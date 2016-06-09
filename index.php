@@ -100,16 +100,22 @@
 		<div id="percent-friends-message"></div>
 	</div>
 	
-	<div class="row popularity-by-gender">
+	<div class="col-md-12 popularity-by-gender">
 		<h3>Popularité en fonction du genre</h3>
 		<div class="col-md-6">
-			<h1>Hommes</h1>
+			<h5>Hommes</h5>
 			<div id="popularity-by-gender-m">
 			</div>
 		</div>
 		<div class="col-md-6">
-			<h1>Femmes</h1>
+			<h5>Femmes</h5>
 			<div id="popularity-by-gender-f" class="col-md-6">
+			</div>
+		</div>
+		<div id="no-data" class="hidden">
+			<div class="alert alert-warning">
+				<i class="glyphicon glyphicon-remove"></i>
+				Pas de données pour afficher le graphique.
 			</div>
 		</div>
 	</div>
