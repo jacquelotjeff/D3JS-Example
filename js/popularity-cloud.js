@@ -36,18 +36,16 @@ function generatePopularityCloud(user){
 				var age = noteur[6];
 
 				if (age >= 18 && age <= 21) {
-					data.push([1, note]);
+					data.push([1, note, gender]);
 				} else if (age >= 22 && age <= 25) {
-					data.push([2, note]);
-				} else if (age >= 25 && age <= 29) {
-					data.push([3, note]);
+					data.push([2, note, gender]);
+				} else if (age >= 26 && age <= 29) {
+					data.push([3, note, gender]);
 				}
 			}
 
 			//Generate cloud
 			generateCloud(data);
-
-			console.log(data);
 
 		});
 	});
@@ -59,15 +57,19 @@ function generateCloud(data){
 
 	var xScale = d3.scale.linear()
 						.domain([0, 4])
-						.range([10, 480]);
+						.range([50, 300]);
 
 	var yScale = d3.scale.linear()
-						.domain([0, 5])
-						.range([10, 240]);
+						.domain([5, 1])
+						.range([50, 300]);
 
 	var xAxis = d3.svg.axis()
 						.scale(xScale)
-						.orient("bottom");
+						.orient("bottom")
+						.tickValues([1, 2, 3])
+						.tickFormat(function (d) {
+							return getStrSliceYear(d);
+						});
 
 	var yAxis = d3.svg.axis()
 						.scale(yScale)
@@ -75,10 +77,11 @@ function generateCloud(data){
 
 	svg.append("g").attr("class", "axis")
 					.call(xAxis)
-					.attr("transform", "translate(0,"+(480)+")");
+					.attr("transform", "translate(0,300)");
 
 	svg.append("g").attr("class", "axis")
-					.call(yAxis);
+					.call(yAxis)
+					.attr("transform", "translate(50,0)");
 
 	svg.selectAll("text")
 		.data(data)
@@ -104,5 +107,22 @@ function generateCloud(data){
 		.attr("cx", function (d) { return xScale(d[0]); })
 		.attr("cy", function (d) { return yScale(d[1]); })
 		.attr("r", 3)
-		.style("fill", "red");
+		.style("fill", function (d) {
+			//Comparaison du genre
+			if (d[2] == 1) {
+				return 'blue';
+			} else {
+				return 'violet';
+			}
+		});
+}
+
+function getStrSliceYear(data){
+	if (data == 1) {
+		return "18-21";
+	} else if (data == 2) {
+		return "22-25";
+	} else {
+		return "26-29";
+	}
 }

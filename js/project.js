@@ -7,7 +7,7 @@ $(document).ready(function(){
 	generatePopularityByGender(3);
 	generatePourcentFriendGender(3);
 	generateFriendsByGenderYears(4);
-	generatePopularityCloud(1);
+	generatePopularityCloud(4);
 
 });
 
