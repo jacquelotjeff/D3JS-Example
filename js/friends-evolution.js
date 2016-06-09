@@ -14,4 +14,8 @@ function generateAxisData(idDiv, data) {
         },
         series:[{lineWidth:4, markerOptions:{style:'square'}}]
     });
+
+    $(window).resize(function() {
+        plot1.replot( { resetAxes: true } );
+    });
 }

@@ -2,12 +2,12 @@ $(document).ready(function(){
 
 	$.ajaxSetup({ cache: false });
 	
-	generateFriendsEvolution(3);
-	generatePercentFriendsMessage(3);
-	generatePopularityByGender(3);
-	generatePourcentFriendGender(3);
-	generateFriendsByGenderYears(4);
-	generatePopularityCloud(4);
+	generateFriendsEvolution(current_user);
+	generatePercentFriendsMessage(current_user);
+	generatePopularityByGender(current_user);
+	generatePourcentFriendGender(current_user);
+	generateFriendsByGenderYears(current_user);
+	generatePopularityCloud(current_user);
 
 });
 
