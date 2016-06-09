@@ -29,9 +29,9 @@ function generateBarChart(idDiv, data, ticks)
 	});
 }
 
-function generatePourcentFriendGender() {
+function generatePourcentFriendGender(user) {
 	var list_users = [];
-	getRequest('webservices/liste_amis_user.php?user=5', function(data) {
+	getRequest('webservices/liste_amis_user.php?user='+user, function(data) {
 		var list_users = "";
 		for (var i = 0; i <= data.length - 1; i++) {
 			//console.log(i);

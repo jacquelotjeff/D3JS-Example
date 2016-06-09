@@ -4,7 +4,7 @@ $(document).ready(function(){
 	
 	generateFriendsEvolution(current_user);
 	generatePercentFriendsMessage(current_user);
-	generateEvolutionPopularite(13);
+	generateEvolutionPopularite(current_user);
 	generatePopularityByGender(current_user);
 	generatePourcentFriendGender(current_user);
 	generateFriendsByGenderYears(current_user);
