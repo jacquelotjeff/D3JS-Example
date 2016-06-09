@@ -18,6 +18,8 @@
 	<script type="text/javascript" src="js/renderer/jqplot.highlighter.js"></script>
 	<script type="text/javascript" src="js/renderer/jqplot.pieRenderer.js"></script>
 	<script type="application/javascript" src="js/renderer/jqplot.dateAxisRenderer.js"></script>
+	
+	<script type="application/javascript" src="js/renderer/d3.min.js"></script>
 
 	<!-- Fichier surchargés -->
 	<script type="text/javascript" src="js/percent-friends-message.js"></script>
@@ -25,6 +27,7 @@
     <script type="text/javascript" src="js/pourcent-friend-gender.js"></script>
     <script type="text/javascript" src="js/popularity-by-gender.js"></script>
     <script type="text/javascript" src="js/friends-by-gender-years.js"></script>
+    <script type="text/javascript" src="js/popularity-cloud.js"></script>
 	<script type="text/javascript" src="js/project.js"></script>
 	<link href="css/project.css" type="text/css" rel="stylesheet"></link>
 
@@ -76,6 +79,12 @@
 		<div id="friends-by-gender-years-info">
 		</div>
 		<div id="friends-by-gender-years" class="test">
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<h3>Nuage de points de la popularité par tranche d'âge.</h3>
+		<div id="popularity-cloud">
 		</div>
 	</div>
 </div>

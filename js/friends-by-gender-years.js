@@ -58,10 +58,6 @@ function generateFriendsByGenderYears(user) {
 				serieFemale.push(data1[0][age]);
 			}
 
-			console.log(slicesYears);
-			console.log(serieFemale);
-			console.log(serieMale);
-
 			plot2 = $.jqplot('friends-by-gender-years', [serieFemale, serieMale], {
 	            seriesDefaults: {
 	                renderer:$.jqplot.BarRenderer,
