@@ -4,11 +4,11 @@ $(document).ready(function(){
 	
 	generateFriendsEvolution(current_user);
 	generatePercentFriendsMessage(current_user);
+	generateEvolutionPopularite(13);
 	generatePopularityByGender(current_user);
 	generatePourcentFriendGender(current_user);
 	generateFriendsByGenderYears(current_user);
 	generatePopularityCloud(current_user);
-
 });
 
 function getRequest(url, callback) {
